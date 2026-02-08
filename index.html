@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML+CSS Finally</title>
-    <link rel="stylesheet" href="./assets/reset.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -15,13 +15,13 @@
     />
   </head>
   <body>
-    <header>
+    <header class="headerWebSite">
       <a class="userNameFamily">
         <span>ana</span>
         <span>zeferino</span>
       </a>
-      <nav class="btnNavigation">
-        <ul>
+      <nav>
+        <ul class="btnNavigation">
           <li><a href="">Serviços</a></li>
           <li><a href="">Eu indico</a></li>
           <li><a href="">Sobre</a></li>
@@ -32,32 +32,45 @@
 
     <main>
       <section class="intro">
-        <h1>Ana Zeferino</h1>
-        <p>Gestora de marketing digital</p>
-        <ul class="iconsLinkIntro">
-          <li>
-            <a href=""><i class="fa-solid fa-envelope"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-square-behance"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-          </li>
-        </ul>
+        <div class="leftIntro">
+          <div class="textIntro">
+            <h1>Ana</h1>
+            <span>Zeferino</span>
+            <p>Gestora de marketing digital</p>
+          </div>
+          <ul class="iconsLinkIntro">
+            <li>
+              <a href=""><i class="iconsStyle fa-solid fa-envelope"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="iconsStyle fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="iconsStyle fa-brands fa-square-behance"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="iconsStyle fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="iconsStyle fa-brands fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+        <img
+          class="anaZeferinoIntro"
+          src="./assets/images/photo-453x740.png"
+          alt="Ana Zeferino"
+        />
       </section>
 
       <section class="services">
         <h2>Serviços</h2>
 
         <article class="articleConsultoria">
-          <h3>Consultoria individual</h3>
+          <h3>Consultoria</h3>
+          <h3>individual</h3>
           <p>
             A consultoria é um serviço individualizado que segue uma estrutura
             com foco em diagnosticar e encaminhar um plano de ação diante um
@@ -80,7 +93,8 @@
         </article>
 
         <article class="articleLanding">
-          <h3>Landing Page</h3>
+          <h3>Landing</h3>
+          <h3>Page</h3>
           <p>
             Precisa de uma página de captura para sua isca digital, uma página
             de lista de espera para infoproduto ou uma página de venda para
@@ -160,39 +174,39 @@
 
       <section class="pessoas_empresas">
         <h2>Pessoas e empresas com quem já trabalhei</h2>
-        <figure class="divAnaLauraLobo">
+        <figure class="figurePessoas">
           <img src="" alt="Ana Laura Lobo" />
           <figcaption>ana Laura Lobo</figcaption>
         </figure>
-        <figure class="divFlordemim">
+        <figure class="figurePessoas">
           <img src="" alt="Flordemim" />
           <figcaption>Flordemim</figcaption>
         </figure>
-        <figure class="divJuliaMendonca">
+        <figure class="figurePessoas">
           <img src="" alt="Julia Mendonca" />
           <figcaption>Júlia Mendonça</figcaption>
         </figure>
-        <figure class="divCarolinaInthurn">
+        <figure class="figurePessoas">
           <img src="" alt="Carolina Inthurn" />
           <figcaption>Carolina Inthurn</figcaption>
         </figure>
-        <figure class="divSaveMeTeacher">
+        <figure class="figurePessoas">
           <img src="" alt="Save Me Teacher" />
           <figcaption>Save Me Teacher</figcaption>
         </figure>
-        <figure class="divCamiLopes">
+        <figure class="figurePessoas">
           <img src="" alt="Cami Lopes" />
           <figcaption>Cami Lopes</figcaption>
         </figure>
-        <figure class="divDigiGirls">
+        <figure class="figurePessoas">
           <img src="" alt="Digi Girls" />
           <figcaption>Digi Girls</figcaption>
         </figure>
-        <figure class="Ellora Haonne">
+        <figure class="figurePessoas">
           <img src="" alt="Ellora Haonne" />
           <figcaption>Ellora Haonne</figcaption>
         </figure>
-        <figure class="divJaquelineGatti">
+        <figure class="figurePessoas">
           <img src="" alt="Jaqueline Gatti" />
           <figcaption>Jaqueline Gatti</figcaption>
         </figure>

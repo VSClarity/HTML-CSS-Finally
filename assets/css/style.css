@@ -1,0 +1,148 @@
+body {
+  box-sizing: border-box;
+}
+
+.headerWebSite {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.userNameFamily {
+  display: flex;
+  flex-direction: column;
+}
+
+.userNameFamily span:first-child {
+  font-weight: bold;
+}
+
+.btnNavigation {
+  display: flex;
+  gap: 15px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  background-color: antiquewhite;
+  padding-left: 250px;
+}
+
+.textIntro h1,
+.textIntro span {
+  font-weight: bold;
+}
+
+.iconsLinkIntro {
+  display: flex;
+  gap: 16px;
+}
+
+.leftIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.iconsStyle {
+  color: orangered;
+  border-radius: 50%;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 140px 80px;
+  font-size: 1.2rem;
+  gap: 20px;
+}
+
+.services h2 {
+  width: 100%;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 48px;
+}
+
+.articleConsultoria,
+.articleLanding {
+  width: calc(91% / 2);
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: darkgreen;
+  color: white;
+}
+
+.articleConsultoria p,
+.articleLanding p {
+  width: 100%;
+  margin: 16px 0;
+  line-height: 1.6;
+}
+
+.articleTreinamento {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: darkgreen;
+  color: white;
+  gap: 16px;
+}
+
+.articleTreinamento div {
+  flex: 1;
+}
+
+.articleTreinamento p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.articleConsultoria h3,
+.articleLanding h3,
+.articleTreinamento h3 {
+  font-size: 1.7em;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.btnArticle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b8b788;
+  margin-top: 16px;
+  padding: 10px;
+  border: none;
+  color: black;
+  width: 100%;
+}
+
+.btnDone {
+  color: #eaeaea;
+  background-color: #d0481e;
+  margin-top: auto;
+  padding: 15px;
+  width: 100%;
+}
+
+.btnLink {
+  color: #eaeaea;
+  border: 1px solid #d0481e;
+  background-color: transparent;
+  padding: 15px;
+  margin-top: 10px;
+  width: 100%;
+}
