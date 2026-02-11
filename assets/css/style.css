@@ -1,5 +1,8 @@
 body {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 .headerWebSite {
@@ -24,18 +27,27 @@ body {
   gap: 15px;
 }
 
+.linkHeader {
+  color: black;
+  text-decoration: none;
+}
+
 .intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 3rem;
-  background-color: antiquewhite;
+  background-color: #cddab2;
   padding-left: 250px;
 }
 
 .textIntro h1,
 .textIntro span {
-  font-weight: bold;
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2em;
 }
 
 .iconsLinkIntro {
@@ -50,18 +62,20 @@ body {
   gap: 24px;
 }
 
-.iconsStyle {
-  color: orangered;
-  border-radius: 50%;
-}
-
 .services {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding: 140px 80px;
+  padding: 140px 340px;
   font-size: 1.2rem;
   gap: 20px;
+}
+
+.fontsConsultoria {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .services h2 {
@@ -74,12 +88,12 @@ body {
 
 .articleConsultoria,
 .articleLanding {
-  width: calc(91% / 2);
-  min-height: 560px;
+  width: calc(90% / 2);
+  min-height: 660px;
   display: flex;
   flex-direction: column;
   padding: 24px;
-  background-color: darkgreen;
+  background-color: #31533b;
   color: white;
 }
 
@@ -96,7 +110,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 24px;
-  background-color: darkgreen;
+  background-color: #31533b;
   color: white;
   gap: 16px;
 }
@@ -123,7 +137,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b8b788;
+  background-color: #b3b476;
   margin-top: 16px;
   padding: 10px;
   border: none;
@@ -133,7 +147,7 @@ body {
 
 .btnDone {
   color: #eaeaea;
-  background-color: #d0481e;
+  background-color: #ce4115;
   margin-top: auto;
   padding: 15px;
   width: 100%;
