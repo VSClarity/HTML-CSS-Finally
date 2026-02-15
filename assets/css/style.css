@@ -2,7 +2,6 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  font-style: normal;
 }
 
 .headerWebSite {
@@ -38,15 +37,13 @@ body {
   align-items: center;
   font-size: 3rem;
   background-color: #cddab2;
-  padding-left: 250px;
+  padding-left: 350px;
 }
 
 .textIntro h1,
 .textIntro span {
   font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
   font-weight: 900;
-  font-style: normal;
   font-size: 2em;
 }
 
@@ -65,31 +62,36 @@ body {
 .services {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
   padding: 140px 340px;
   font-size: 1.2rem;
   gap: 20px;
 }
 
-.fontsConsultoria {
-  font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.services h2 {
+.services h2,
+.eu_indico h2,
+.pessoas_empresas span {
   width: 100%;
-  text-align: left;
   font-size: 3rem;
+  font-family: "Bodoni Moda", serif;
   font-weight: 900;
   margin-bottom: 48px;
 }
 
+.boxFlex {
+  display: flex;
+  min-height: 712px;
+  gap: 25px;
+}
+
+.articleConsultoria,
+.articleLanding,
+.articleTreinamento {
+  padding: 35px;
+}
+
 .articleConsultoria,
 .articleLanding {
-  width: calc(90% / 2);
-  min-height: 660px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   padding: 24px;
@@ -99,7 +101,6 @@ body {
 
 .articleConsultoria p,
 .articleLanding p {
-  width: 100%;
   margin: 16px 0;
   line-height: 1.6;
 }
@@ -115,7 +116,7 @@ body {
   gap: 16px;
 }
 
-.articleTreinamento div {
+.articleTreinamento > div {
   flex: 1;
 }
 
@@ -128,28 +129,33 @@ body {
 .articleLanding h3,
 .articleTreinamento h3 {
   font-size: 1.7em;
+  font-family: "Bodoni Moda", serif;
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: 16px;
+}
+
+.flexRowTreinamento {
+  display: flex;
+  gap: 30px;
 }
 
 .btnArticle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b3b476;
-  margin-top: 16px;
-  padding: 10px;
-  border: none;
+  width: 381px;
   color: black;
-  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 0px 1px white;
+  background-color: #b3b476;
+  border: none;
 }
 
 .btnDone {
   color: #eaeaea;
   background-color: #ce4115;
-  margin-top: auto;
-  padding: 15px;
   width: 100%;
 }
 
@@ -158,6 +164,93 @@ body {
   border: 1px solid #d0481e;
   background-color: transparent;
   padding: 15px;
-  margin-top: 10px;
   width: 100%;
+}
+
+.btnDone,
+.btnLink,
+.btnArticle {
+  height: 58px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btnDone,
+.btnLink {
+  width: 310px;
+  margin: auto;
+}
+
+.eu_indico {
+  display: flex;
+  flex-direction: column;
+  background-color: #b3b476;
+  padding: 140px 340px;
+}
+
+.flexIndico {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5vh;
+}
+
+.articleTrellos,
+.articleElementor,
+.articleMentoria,
+.articleKiwify {
+  display: flex;
+  width: calc(50% - 25px);
+  background-color: #b3b476;
+  gap: 10px;
+}
+
+.articleInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.btnAcessar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #eaeaea;
+  background-color: #ce4115;
+  margin-top: auto;
+  height: 41px;
+  border: none;
+  gap: 5px;
+}
+
+.boldInfo {
+  font-weight: 700;
+}
+
+.pessoas_empresas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 140px 240px;
+  gap: 80px 100px;
+}
+
+.pessoas_empresas h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.pessoas_empresas span {
+  display: flex;
+  flex-direction: column;
+}
+
+.figurePessoas {
+  flex: 0 0 calc(20% - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
