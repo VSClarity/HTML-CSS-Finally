@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -80,21 +84,22 @@ body {
 .boxFlex {
   display: flex;
   min-height: 712px;
+  width: 100%;
+  min-width: 460px;
   gap: 25px;
 }
 
 .articleConsultoria,
 .articleLanding,
 .articleTreinamento {
-  padding: 35px;
 }
 
 .articleConsultoria,
 .articleLanding {
-  width: 50%;
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  width: 50%;
+  padding: 45px;
   background-color: #31533b;
   color: white;
 }
@@ -105,18 +110,29 @@ body {
   line-height: 1.6;
 }
 
+.articleLanding span:nth-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.articleLanding .btnDone,
+.articleLanding .btnLink {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
 .articleTreinamento {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px;
+  padding: 65px;
   background-color: #31533b;
   color: white;
   gap: 16px;
 }
 
-.articleTreinamento > div {
+.articleTreinamento div {
   flex: 1;
 }
 
@@ -156,15 +172,12 @@ body {
 .btnDone {
   color: #eaeaea;
   background-color: #ce4115;
-  width: 100%;
 }
 
 .btnLink {
   color: #eaeaea;
   border: 1px solid #d0481e;
   background-color: transparent;
-  padding: 15px;
-  width: 100%;
 }
 
 .btnDone,
