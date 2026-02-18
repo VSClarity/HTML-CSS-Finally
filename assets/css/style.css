@@ -6,6 +6,8 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
+  /* overflow-y: scroll;
+  'scroll-behavior: smooth;' */
 }
 
 .headerWebSite {
@@ -37,12 +39,10 @@ body {
 
 .intro {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 603px;
   font-size: 3rem;
   background-color: #cddab2;
-  padding-left: 350px;
 }
 
 .leftIntro {
@@ -79,6 +79,10 @@ body {
   gap: 16px;
 }
 
+.anaZeferinoIntro {
+  padding-left: 180px;
+}
+
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -103,11 +107,6 @@ body {
   width: 100%;
   min-width: 460px;
   gap: 25px;
-}
-
-.articleConsultoria,
-.articleLanding,
-.articleTreinamento {
 }
 
 .articleConsultoria,
@@ -180,7 +179,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 381px;
+  width: 100%;
   color: black;
   padding: 8px;
   margin-top: 10px;
@@ -268,6 +267,10 @@ body {
   padding-left: 15px;
   font-size: 20px;
   font-weight: 300;
+}
+
+.articleInfo p {
+  width: 260px;
 }
 
 .btnAcessar {
@@ -361,6 +364,11 @@ body {
   background-color: #cddab2;
 }
 
+.quotesOutro {
+  position: absolute;
+  top: -30px;
+}
+
 .textOutro p {
   padding-top: 18px;
 }
@@ -374,6 +382,12 @@ body {
 .btnSwipe2 {
   position: absolute;
   right: 300px;
+}
+
+.sheetOutro {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
 }
 
 .textOutroDiv {
