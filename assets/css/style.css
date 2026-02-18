@@ -351,6 +351,7 @@ body {
 }
 
 .textOutro {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -362,6 +363,17 @@ body {
 
 .textOutro p {
   padding-top: 18px;
+}
+
+.btnSwipe1 {
+  position: absolute;
+  left: 300px;
+}
+
+
+.btnSwipe2 {
+  position: absolute;
+  right: 300px;
 }
 
 .textOutroDiv {
