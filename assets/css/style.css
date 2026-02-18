@@ -13,7 +13,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 100px;
-  font-size: 1.3em;
+  font-size: 20px;
 }
 
 .userNameFamily {
@@ -39,28 +39,44 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 603px;
   font-size: 3rem;
   background-color: #cddab2;
   padding-left: 350px;
-}
-
-.textIntro h1,
-.textIntro span {
-  font-family: "Bodoni Moda", serif;
-  font-weight: 900;
-  font-size: 2em;
-}
-
-.iconsLinkIntro {
-  display: flex;
-  gap: 16px;
 }
 
 .leftIntro {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #0e2715;
   gap: 24px;
+}
+
+.textIntro h1,
+.textIntro span {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 900;
+  font-size: 96px;
+}
+
+.textIntro p {
+  font-size: 28px;
+}
+
+.introFlex {
+  display: flex;
+  color: #31533b;
+  gap: 5px;
+}
+
+.introFlex p:first-child {
+  font-weight: bold;
+}
+
+.iconsLinkIntro {
+  display: flex;
+  gap: 16px;
 }
 
 .services {
@@ -75,7 +91,7 @@ body {
 .eu_indico h2,
 .pessoas_empresas span {
   width: 100%;
-  font-size: 3rem;
+  font-size: 60px;
   font-family: "Bodoni Moda", serif;
   font-weight: 900;
   margin-bottom: 48px;
@@ -116,12 +132,6 @@ body {
   font-weight: bold;
 }
 
-.articleLanding .btnDone,
-.articleLanding .btnLink {
-  margin: 0;
-  margin-bottom: 5px;
-}
-
 .articleTreinamento {
   display: flex;
   flex-direction: column;
@@ -144,12 +154,22 @@ body {
 .articleConsultoria h3,
 .articleLanding h3,
 .articleTreinamento h3 {
-  font-size: 1.7em;
+  font-size: 36px;
   font-family: "Bodoni Moda", serif;
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: 16px;
 }
+
+.articleConsultoria p,
+.articleLanding p,
+.articleTreinamento p {
+  font-size: 18px;
+}
+
+/* .articleTreinamento p:nth-child(1) {
+  font-size: 16px;
+} */
 
 .flexRowTreinamento {
   display: flex;
@@ -169,15 +189,27 @@ body {
   border: none;
 }
 
+.btnArticle span {
+  font-size: 16px;
+}
+
 .btnDone {
   color: #eaeaea;
   background-color: #ce4115;
+}
+
+.btnDone span {
+  font-size: 18px;
 }
 
 .btnLink {
   color: #eaeaea;
   border: 1px solid #d0481e;
   background-color: transparent;
+}
+
+.btnLink span {
+  font-size: 18px;
 }
 
 .btnDone,
@@ -190,8 +222,20 @@ body {
 
 .btnDone,
 .btnLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 310px;
+  gap: 10px;
   margin: auto;
+}
+
+.articleLanding .btnLink {
+  margin-bottom: 5px;
+}
+
+.articleLanding .btnDone {
+  margin-top: 5px;
 }
 
 .eu_indico {
@@ -208,8 +252,8 @@ body {
 }
 
 .articleTrellos,
-.articleElementor,
 .articleMentoria,
+.articleElementor,
 .articleKiwify {
   display: flex;
   width: calc(50% - 25px);
@@ -221,7 +265,8 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  font-size: 1.3rem;
+  padding-left: 15px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -229,11 +274,13 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
+  width: 167px;
+  height: 41px;
   color: #eaeaea;
   background-color: #ce4115;
   margin-top: auto;
-  height: 41px;
-  border: none;
+  border: 1px solid black;
   gap: 5px;
 }
 
@@ -247,6 +294,7 @@ body {
   justify-content: center;
   padding: 140px 240px;
   gap: 80px 100px;
+  margin-bottom: 100px;
 }
 
 .pessoas_empresas h2 {
@@ -262,8 +310,96 @@ body {
 }
 
 .figurePessoas {
-  flex: 0 0 calc(20% - 100px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 0 0 calc(20% - 100px);
+}
+
+.figurePessoas figcaption {
+  font-size: 14px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.outro {
+  display: flex;
+  height: 635px;
+  background-color: #31533b;
+}
+
+.infoOutro {
+  color: #f5f9ed;
+  padding: 140px 340px;
+  font-size: 20px;
+}
+
+.infoOutro p {
+  color: #cddab2;
+  padding-top: 25px;
+}
+
+.outro h2 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.outro img {
+  width: 487px;
+  height: 730px;
+  transform: translateY(-95px) translateX(-144px);
+}
+
+.textOutro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 451px;
+  height: 642px;
+  color: #0e2715;
+  background-color: #cddab2;
+}
+
+.textOutro p {
+  padding-top: 18px;
+}
+
+.textOutroDiv {
+  max-width: 780px;
+  max-height: 350px;
+  font-size: 18px;
+}
+
+.signature {
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.footerWebSite {
+  height: 189px;
+  font-size: 32px;
+}
+
+.footerElements {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 42px;
+}
+
+.footerText {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerText span:first-child {
+  font-weight: bold;
+}
+
+.authorship {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
 }
