@@ -2,19 +2,21 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  /* overflow-y: scroll;
-  'scroll-behavior: smooth;' */
 }
 
 .headerWebSite {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
+  height: 107px;
   font-size: 20px;
 }
 
@@ -37,11 +39,16 @@ body {
   text-decoration: none;
 }
 
+.btnHeader {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
 .intro {
   display: flex;
   align-items: center;
   height: 603px;
-  font-size: 3rem;
   background-color: #cddab2;
 }
 
@@ -77,6 +84,10 @@ body {
 .iconsLinkIntro {
   display: flex;
   gap: 16px;
+}
+
+.iconsLinkIntroPhone {
+  display: none;
 }
 
 .anaZeferinoIntro {
@@ -166,10 +177,6 @@ body {
   font-size: 18px;
 }
 
-/* .articleTreinamento p:nth-child(1) {
-  font-size: 16px;
-} */
-
 .flexRowTreinamento {
   display: flex;
   gap: 30px;
@@ -215,7 +222,6 @@ body {
 .btnLink,
 .btnArticle {
   height: 58px;
-  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -224,7 +230,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 310px;
+  width: 100%;
   gap: 10px;
   margin: auto;
 }
@@ -378,7 +384,6 @@ body {
   left: 300px;
 }
 
-
 .btnSwipe2 {
   position: absolute;
   right: 300px;
@@ -428,4 +433,91 @@ body {
   display: flex;
   justify-content: center;
   font-size: 14px;
+}
+
+@media screen and (max-width: 375px) {
+  .headerWebSite {
+    height: 91px;
+  }
+
+  .userNameFamily {
+    font-size: 16px;
+  }
+
+  .btnNavigation {
+    display: none;
+  }
+
+  .btnHeader {
+    display: block;
+  }
+
+  .intro {
+    height: 290px;
+    padding-left: 19px;
+  }
+
+  .sheetIntro {
+    display: none;
+  }
+
+  .textIntro {
+  }
+
+  .textIntro h1,
+  .textIntro span {
+    font-size: 46px;
+  }
+
+  .introFlex p {
+    font-size: 12px;
+  }
+  .iconsLinkIntro {
+    display: none;
+  }
+
+  .iconsLinkIntroPhone {
+    display: flex;
+    gap: 12px;
+  }
+
+  .services {
+    padding: 0;
+    flex-direction: column;
+  }
+  
+  .services h2,
+  .eu_indico h2,
+  .pessoas_empresas span {
+    font-size: 40px;
+  }
+  
+  .boxFlex {
+    width: 100%;
+  }
+  
+  .articleConsultoria,
+  .articleLanding {
+    min-width: 343px;
+    display: flex;
+    width: 343px;
+    margin: 0 auto;
+  }
+
+  .articleConsultoria h3,
+  .articleLanding h3,
+  .articleTreinamento h3 {
+    font-size: 30px;
+  }
+
+  .btnArticle {
+  }
+
+  .btnDone {
+    height: 45px;
+  }
+
+  .btnDone span {
+    font-size: 16px;
+  }
 }
