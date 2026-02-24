@@ -130,8 +130,15 @@ body {
   color: white;
 }
 
+.articleConsultoria,
+.articleLanding,
+.articleTreinamento {
+  border: solid black;
+}
+
 .articleConsultoria p,
 .articleLanding p {
+  color: #cddab2;
   margin: 16px 0;
   line-height: 1.6;
 }
@@ -159,6 +166,10 @@ body {
 .articleTreinamento p {
   margin: 0;
   line-height: 1.6;
+}
+
+.hideTreinamento_3 {
+  display: none;
 }
 
 .articleConsultoria h3,
@@ -189,7 +200,7 @@ body {
   width: 100%;
   color: black;
   padding: 8px;
-  margin-top: 10px;
+  margin-bottom: 8px;
   box-shadow: 0px 0px 0px 1px white;
   background-color: #b3b476;
   border: none;
@@ -197,6 +208,15 @@ body {
 
 .btnArticle span {
   font-size: 16px;
+}
+
+.hideLanding {
+  display: none;
+}
+
+.landingSpanBtn {
+  display: flex;
+  flex-direction: column;
 }
 
 .btnDone {
@@ -264,6 +284,14 @@ body {
   width: calc(50% - 25px);
   background-color: #b3b476;
   gap: 10px;
+}
+
+.photoSVG_IndicoDesktop {
+  display: block;
+}
+
+.photoSVG_IndicoPhone {
+  display: none;
 }
 
 .articleInfo {
@@ -461,9 +489,6 @@ body {
     display: none;
   }
 
-  .textIntro {
-  }
-
   .textIntro h1,
   .textIntro span {
     font-size: 46px;
@@ -472,6 +497,7 @@ body {
   .introFlex p {
     font-size: 12px;
   }
+
   .iconsLinkIntro {
     display: none;
   }
@@ -481,27 +507,52 @@ body {
     gap: 12px;
   }
 
-  .services {
-    padding: 0;
-    flex-direction: column;
+  .anaZeferinoIntro {
+    display: none;
   }
-  
+
+  .services {
+    width: 100%;
+    padding: 0;
+    margin-top: 60px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
   .services h2,
   .eu_indico h2,
   .pessoas_empresas span {
     font-size: 40px;
   }
-  
+
   .boxFlex {
-    width: 100%;
+    flex-direction: column;
+    min-width: 100%;
   }
-  
+
   .articleConsultoria,
-  .articleLanding {
+  .articleLanding,
+  .articleTreinamento {
     min-width: 343px;
-    display: flex;
     width: 343px;
-    margin: 0 auto;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .articleConsultoria p,
+  .articleLanding p,
+  .articleTreinamento p {
+    font-size: 16px;
+  }
+
+  .articleTreinamento {
+    margin-bottom: 60px;
+  }
+
+  .flexRowTreinamento {
+    flex-direction: column;
+    gap: 0;
   }
 
   .articleConsultoria h3,
@@ -510,14 +561,97 @@ body {
     font-size: 30px;
   }
 
-  .btnArticle {
+  .hideLanding {
+    display: block;
   }
 
-  .btnDone {
+  .hideTreinamento {
+    display: none;
+  }
+
+  .hideTreinamento_2 {
+    display: block;
+  }
+
+  .flexTreinamento_h3 {
+    /* flex-direction: row; */
+  }
+
+  .flexLanding_h3 {
+    display: flex;
+    gap: 5px;
+  }
+
+  .btnDone,
+  .btnLink {
+    width: 90%;
     height: 45px;
+    margin-top: 20px;
   }
 
-  .btnDone span {
+  .btnDone span,
+  .btnLink span {
     font-size: 16px;
+  }
+
+  .btnArticle {
+    text-align: start;
+  }
+
+  .btnArticle span {
+    width: 176px;
+  }
+
+  .hideLanding_2 {
+    display: none;
+  }
+
+  .btnDone,
+  .btnLink,
+  .btnArticle {
+    align-self: center;
+  }
+
+  .eu_indico {
+    padding: 0;
+    padding-left: 16px;
+    padding-top: 60px;
+  }
+
+  .flexIndico {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .fontsEu_indico {
+    font-size: 40px;
+  }
+
+  .articleTrellos,
+  .articleMentoria,
+  .articleElementor,
+  .articleKiwify {
+  }
+
+  .photoSVG_IndicoDesktop {
+    display: none;
+  }
+
+  .photoSVG_IndicoPhone {
+    display: block;
+  }
+
+  .articleInfo {
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .articleInfo p {
+    width: 218px;
+  }
+
+  .btnAcessar {
+    width: 167px;
+    height: 37px;
   }
 }
