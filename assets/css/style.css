@@ -328,7 +328,7 @@ body {
 .pessoas_empresas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   padding: 140px 240px;
   gap: 80px 100px;
   margin-bottom: 100px;
@@ -339,6 +339,10 @@ body {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.photoSVG_PessoasPhone {
+  display: none;
 }
 
 .pessoas_empresas span {
@@ -381,10 +385,14 @@ body {
   font-weight: bold;
 }
 
-.outro img {
+.photoOutroDesktop {
   width: 487px;
   height: 730px;
   transform: translateY(-95px) translateX(-144px);
+}
+
+.photoOutroPhone {
+  display: none;
 }
 
 .textOutro {
@@ -398,13 +406,17 @@ body {
   background-color: #cddab2;
 }
 
-.quotesOutro {
+.textOutro p {
+  padding-top: 18px;
+}
+
+.quotesOutroDesktop {
   position: absolute;
   top: -30px;
 }
 
-.textOutro p {
-  padding-top: 18px;
+.quotesOutroPhone {
+  display: none;
 }
 
 .btnSwipe1 {
@@ -424,8 +436,10 @@ body {
 }
 
 .textOutroDiv {
+  display: flex;
+  flex-direction: column;
   max-width: 780px;
-  max-height: 350px;
+  height: 350px;
   font-size: 18px;
 }
 
@@ -460,6 +474,7 @@ body {
 .authorship {
   display: flex;
   justify-content: center;
+  padding-top: 35px;
   font-size: 14px;
 }
 
@@ -516,7 +531,6 @@ body {
     padding: 0;
     margin-top: 60px;
     margin-left: 16px;
-    margin-right: 16px;
   }
 
   .services h2,
@@ -612,10 +626,12 @@ body {
     align-self: center;
   }
 
-  .eu_indico {
+  .eu_indico,
+  .pessoas_empresas {
     padding: 0;
     padding-left: 16px;
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .flexIndico {
@@ -639,11 +655,13 @@ body {
 
   .photoSVG_IndicoPhone {
     display: block;
+    min-width: 100px;
   }
 
   .articleInfo {
     padding: 0;
     font-size: 18px;
+    line-height: 1.5;
   }
 
   .articleInfo p {
@@ -651,7 +669,127 @@ body {
   }
 
   .btnAcessar {
-    width: 167px;
+    width: 147px;
     height: 37px;
+  }
+
+  .pessoas_empresas {
+    padding-bottom: 20px;
+    gap: 40px 20px;
+  }
+
+  .pessoas_empresas h2 {
+    text-align: left;
+  }
+
+  .pessoas_empresas span {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .flexPessoas {
+  }
+
+  .figurePessoas figcaption {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .photoSVG_PessoasDesktop {
+    display: none;
+  }
+
+  .photoSVG_PessoasPhone {
+    display: block;
+  }
+
+  .outro {
+    height: 419px;
+  }
+
+  .outro h2 {
+    font-size: 30px;
+  }
+
+  .infoOutro {
+    padding: 0;
+    padding-left: 19px;
+    padding-top: 40px;
+    font-size: 16px;
+  }
+
+  .infoOutro p {
+    width: 339px;
+    padding-top: 0;
+    padding-right: 19px;
+    line-height: 1.5;
+  }
+
+  .infoOutro p:first-of-type {
+    padding-top: 15px;
+  }
+
+  .photoOutroDesktop {
+    display: none;
+  }
+
+  .photoOutroPhone {
+    display: block;
+    width: 124px;
+    height: 156px;
+    transform: translateY(-60px) translateX(-165px);
+  }
+
+  .quotesOutroDesktop {
+    display: none;
+  }
+
+  .quotesOutroPhone {
+    display: block;
+    position: absolute;
+    top: -13px;
+    left: 16px;
+  }
+
+  .btnSwipe1 {
+    position: absolute;
+    left: 16px;
+  }
+
+  .btnSwipe2 {
+    position: absolute;
+    right: 16px;
+  }
+
+  .textOutro {
+    padding-left: 0;
+    /* height: 0; */
+    color: #0e2715;
+    background-color: #cddab2;
+  }
+
+  .textOutroDiv {
+    flex-direction: column;
+    justify-content: center;
+    width: 293px;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .sheetOutro {
+    display: none;
+  }
+
+  .footerWebSite {
+    height: 150px;
+  }
+
+  .footerText {
+    font-size: 16px;
+  }
+
+  .authorship {
+    padding-top: 20px;
+    font-size: 10px;
   }
 }
