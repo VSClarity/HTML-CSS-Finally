@@ -468,12 +468,14 @@ body {
 
 .btnSwipe1 {
   position: absolute;
-  left: 300px;
+  left: 10px;
+  top: 50%;
 }
 
 .btnSwipe2 {
   position: absolute;
-  right: 300px;
+  right: 10px;
+  top: 50%;
 }
 
 .sheetOutro {
@@ -483,9 +485,11 @@ body {
 }
 
 .textOutroDiv {
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 780px;
+  padding: 0 50px;
   height: 350px;
   font-size: 18px;
 }
