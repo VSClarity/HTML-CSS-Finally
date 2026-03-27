@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 107px;
+  min-height: 107px;
   font-size: 20px;
 }
 
@@ -68,7 +68,7 @@ body {
 .intro {
   display: flex;
   align-items: center;
-  height: 603px;
+  min-height: 603px;
   background-color: #cddab2;
 }
 
@@ -117,13 +117,11 @@ body {
 .services {
   display: flex;
   flex-wrap: wrap;
-  /*----*/
   padding: 140px 0;
   min-width: 375px;
   max-width: 941px;
   width: 95%;
   margin: auto;
-  /*----*/
   font-size: 1.2rem;
   gap: 20px;
 }
@@ -267,7 +265,7 @@ body {
 .btnDone,
 .btnLink,
 .btnArticle {
-  height: 58px;
+  min-height: 58px;
   font-weight: bold;
 }
 
@@ -313,7 +311,6 @@ body {
 .articleElementor,
 .articleKiwify {
   display: flex;
-  /* width: calc(50% - 25px); */
   background-color: #b3b476;
   gap: 10px;
 }
@@ -346,7 +343,7 @@ body {
   justify-content: center;
   gap: 5px;
   width: 167px;
-  height: 41px;
+  min-height: 41px;
   margin-top: auto;
   border: 1px solid black;
 
@@ -404,13 +401,12 @@ body {
 
 .outro {
   display: flex;
-  height: 635px;
+  min-height: 635px;
   background-color: #31533b;
 }
 
 .infoOutro {
   color: #f5f9ed;
-  /* padding: 140px 340px; */
   font-size: 20px;
   padding: 140px 0;
   min-width: 375px;
@@ -445,9 +441,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding-left: 451px; */
-
-  height: 642px;
+  min-height: 642px;
   color: #0e2715;
   background-color: #cddab2;
 }
@@ -490,7 +484,7 @@ body {
   flex-direction: column;
   max-width: 780px;
   padding: 0 50px;
-  height: 350px;
+  min-height: 350px;
   font-size: 18px;
 }
 
@@ -502,7 +496,7 @@ body {
 }
 
 .footerWebSite {
-  height: 189px;
+  min-height: 189px;
   font-size: 32px;
 }
 
@@ -548,7 +542,7 @@ body {
 
 @media screen and (max-width: 375px) {
   .headerWebSite {
-    height: 91px;
+    min-height: 91px;
   }
 
   .userNameFamily {
@@ -564,7 +558,7 @@ body {
   }
 
   .intro {
-    height: 290px;
+    min-height: 290px;
     padding-left: 19px;
   }
 
@@ -655,10 +649,6 @@ body {
     display: block;
   }
 
-  .flexTreinamento_h3 {
-    /* flex-direction: row; */
-  }
-
   .flexLanding_h3 {
     display: flex;
     gap: 5px;
@@ -667,7 +657,7 @@ body {
   .btnDone,
   .btnLink {
     width: 90%;
-    height: 45px;
+    min-height: 45px;
     margin-top: 20px;
   }
 
@@ -711,12 +701,6 @@ body {
     font-size: 40px;
   }
 
-  .articleTrellos,
-  .articleMentoria,
-  .articleElementor,
-  .articleKiwify {
-  }
-
   .photoSVG_IndicoDesktop {
     display: none;
   }
@@ -738,7 +722,7 @@ body {
 
   .btnAcessar {
     width: 147px;
-    height: 37px;
+    min-height: 37px;
   }
 
   .pessoas_empresas {
@@ -756,9 +740,6 @@ body {
     margin-bottom: 10px;
   }
 
-  .flexPessoas {
-  }
-
   .figurePessoas figcaption {
     font-size: 12px;
     text-align: center;
@@ -773,7 +754,7 @@ body {
   }
 
   .outro {
-    height: 419px;
+    min-height: 419px;
   }
 
   .outro h2 {
@@ -832,7 +813,6 @@ body {
 
   .textOutro {
     padding-left: 0;
-    /* height: 0; */
     color: #0e2715;
     background-color: #cddab2;
   }
@@ -846,7 +826,7 @@ body {
   }
 
   .footerWebSite {
-    height: 150px;
+    min-height: 150px;
   }
 
   .footerText {
